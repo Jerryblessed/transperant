@@ -1,7 +1,7 @@
 {% extends "base.html" %} {% block content %}
 <form action="{{ url_for('index') }}" method="POST">
     <div class="form-group">
-        <label for="text">Your data</label>
+        <label for="text">User </label>
         <input type="text" class="form-control" id="text" placeholder="Put your text" name="text"
             value="{{ request.form.get('text', '') }}" required>
     </div>
@@ -13,12 +13,14 @@
         </label>
     </div>
     <br>
-    <button type="submit" class="btn btn-primary btn-lg btn-block">Send</button>
+    <button type="submit" class="btn btn-success btn-lg btn-block">Send</button>
+
+    <!-- <button type="submit" class="btn btn-primary btn-lg btn-block">Send</button> -->
 </form>
 <br>
 <hr> {% endblock %} {% block check %}
 <form action="{{ url_for('integrity') }}" method="POST">
-    <button type="submit" class="btn btn-primary btn-lg btn-block">Check integrity</button>
+    <button type="submit" class="btn btn-success btn-lg btn-block">Check integrity</button>
 </form>
 <hr>
 <ul class="list-group">
@@ -35,12 +37,13 @@
 <br> {% endblock %}
 <hr> {% block mining %}
 <form action="{{ url_for('mining') }}" method="POST">
-    <button type="submit" class="btn btn-primary btn-lg btn-block">Mine</button>
+    <button type="submit" class="btn btn-success btn-lg btn-block">Mine</button>
 </form>
 {% if querry %}
 <hr>
 <div class="alert alert-success" role="alert">
-    <strong>Well done!</strong> You successfully mined!
+    <strong>Well done!</strong> You successfully mined! 
+    <a href = 'https://test-eth-awzuwb2p3-falk0r.vercel.app/'> go here to get etherum</a>
 </div>
 <hr><br> {% endif %}
 
