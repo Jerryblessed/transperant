@@ -1,5 +1,7 @@
 # [Transparnet  ]()
 # [Link to Etherum Dapp repo ](https://github.com/Falk0r/Ethereum-first-Dapp)
+# [Architectural design](https://github.com/Jerryblessed/transperant/blob/main/Transparency.png)
+
 
 Simple blog app built with Flask.
 <br/>
